@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="icomoon/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <title>Level2</title>
+
+</head>
+<body onload="start()">
+
+    <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAetWXnOoa6Tbah5y9HMGDyMOyrD6OrHoA",
+            authDomain: "keenexit-b0c70.firebaseapp.com",
+            databaseURL: "https://keenexit-b0c70.firebaseio.com",
+            projectId: "keenexit-b0c70",
+            storageBucket: "",
+            messagingSenderId: "1037933812512"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+    <div class="game level">
+
+        <div class="game-inter">
+            <div class="header">
+                <a href="home.html" class="back"><img src="images/left.png" /></a>
+                <div class="levellogo"><p>Level2</p></div>
+
+            </div>
+            <p class="pspecial" id="enter"></p>
+            <table id="table"></table>
+            <p class="pspecial alignleft"><img src="images/HouseCartoon.png" /></p>
+            <div class="levelbottom">
+                <div class="timer">
+                    <a href="#" class="icon icon-alarm"></a>
+                    <div id="timer"></div>
+                </div>
+                <a href="level1.html" class="icon icon-loop2"></a>
+            </div>
+
+        </div>
+
+        <div id="result" class="result hide">
+            <div id="result-div" class="result-div">
+                <div class="levelinfo">
+                    <div id="levelpro"></div>
+                    <div id="levelname">
+                        <p>Level 2</p>
+                        <p id="timetaken"></p>
+                    </div>
+                </div>
+                <div class="res" id="res">
+
+                </div>
+                <div class="buttons" id="buttons">
+                    <a href="home.html" class="grnbtn">Cancel</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+    <script type="text/javascript" src="scripts/script2.js"></script>
+</body>
+</html>

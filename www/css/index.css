@@ -1,0 +1,510 @@
+* {
+    //-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Ultra');
+@import url('https://fonts.googleapis.com/css?family=Flamenco:300,400|Inconsolata:400,700|Lobster');
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body {
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: none;
+    -webkit-user-select: none;
+    background-color: #ffffff;
+    background-attachment: fixed;
+    font-family: 'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    
+    width: 100%;
+    background-color: #32383d;
+    
+}
+
+h3 {
+    font-family: "Ultra";
+    font-size: 2em;
+    color: #63b571;
+}
+
+.game {
+    background: url("../images/cloudy-sky.jpg");
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.index {
+    background: url("../images/maze.jpg");
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.index .logo, .login .logo {
+    width: 90%;
+    margin: 0 auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+.login .logo{
+    height: 30vh;
+    text-align: center;
+}
+
+.index .logo img, .login .logo img {
+    width: 100%;
+    height: auto;
+}
+
+.login .logo img{
+    height: 30vh;
+    width: auto;
+}
+
+.login-int{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input{
+    height: 30px;
+    margin: 5px auto;
+    border: 5px solid #63b571;
+}
+
+hr{
+    border: 2px solid #63b571;
+    width: 80%;
+}
+
+.dbtn {
+    background: white;
+    padding: 10px 20px;
+    color: #63b571;
+    font-size: 2em;
+    font-weight: 600;
+    margin: 5px;
+}
+
+.header{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .logo{
+    flex-basis: 50%;
+    width: 50%;
+    height: auto;
+    margin-right: 20%;
+    object-fit: cover;
+    object-position: center;
+    align-self: center;
+}
+
+.header .logo img{
+    width: 100%;
+    height: auto;
+}
+
+.profile {
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px black;
+    align-items: center;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    background: #63b571;
+}
+
+.profile-home .profile img {
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}
+
+.levels{
+    width: 80%;
+    height: 60%;
+    margin: 5% auto 0 auto;
+    background: url("../images/artkeen.jpg");
+    background-size: cover;
+    background-position:center;
+    display: flex;
+    flex-direction: column;
+}
+
+.leveldiv{
+    width: 50%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dleft{
+    align-self: flex-start;
+}
+
+.dright{
+    align-self: flex-end;
+}
+
+.levelgame {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 6px solid #63b571;
+    background: white;
+    color: #63b571;
+    font-size: 2.5em;
+    font-weight: 600;
+    font-family: cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.active {
+    color: white;
+    background: #63b571;
+}
+
+.levelinfo{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.levelinfo img{
+    height: 30vh;
+    width: auto;
+}
+
+.players{
+    width: 80%;
+    margin: 5% auto 0 auto;
+}
+
+.players table{
+    width: 100%;
+
+}
+
+.buttons{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.grnbtn {
+    margin: 10px auto;
+    padding: 5px 20px;
+    background: #63b571;
+    color: white;
+    font-size: 2em;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.res{
+    text-align: center;
+}
+
+.res img{
+    height: 30vh;
+    width: auto;
+}
+
+.app {
+    position: absolute;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    padding: 180px 0px 0px 0px;
+}
+
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+    .app {
+        background-position:left center;
+        padding:75px 0px 75px 170px;
+        margin:-90px 0px 0px -198px;
+    }
+}
+
+h1 {
+    font-size:24px;
+    font-weight:normal;
+    margin:0px;
+    overflow:visible;
+    padding:0px;
+    text-align:center;
+}
+
+.back {
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back img {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px black;
+    align-items: center;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    background: #63b571;
+}
+
+.level{
+    width: 100%;
+    height: 100vh;
+}
+
+.level .header{
+    align-items: center;
+    height: 10vh;
+}
+
+.level .header .levellogo{
+    margin-right: 40%;
+}
+
+.icon {
+    font-size: 1.3rem;
+    color: white;
+    text-decoration: none;
+    background: #63b571;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.levelbottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.timer{
+    display: flex;
+    justify-content: center;
+}
+
+.pspecial{
+    margin: 0 5%;
+    
+}
+
+.pspecial img{
+    height: 10vh;
+    width: auto;
+}
+
+.alignleft{
+    text-align: right;
+}
+
+.level table {
+    width: 90%;
+    height: 60vh;
+    margin: 0 auto;
+    background: white;
+    padding: 2%;
+    border-spacing: 0;
+}
+
+.level td {
+    
+    margin: 0;
+}
+
+.level tr {
+    margin: 0;
+}
+
+.bt {
+    border-top: 2px solid black;
+}
+
+.br {
+    border-right: 2px solid black;
+}
+
+.bl {
+    border-left: 2px solid black;
+}
+
+.bb {
+    border-bottom: 2px solid black;
+}
+
+.game-inter {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+}
+
+.result{
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+}
+
+.result-div {
+    width: 90%;
+    height: 90vh;
+    margin: 5vh auto;
+    background: white;
+}
+
+.levelaccess {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+}
+
+.levelaccessdiv {
+    width: 90%;
+    height: 90vh;
+    margin: 5vh auto;
+    background: white;
+}
+
+.hide{
+    display: none;
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+p {
+    font-size: 2em;
+    font-weight: 700;
+    margin: 10px;
+    font-family: 'Lobster';
+    color: #63b571;
+}
+
+.profile-image .profile {
+    width: 100%;
+    height: 40vh;
+    position: relative;
+}
+
+.profile-done{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.choice div{
+    display: flex;
+    width: 100%;
+    height: 30vh;
+}
+
+.choice div img{
+    width: 33.33%;
+    height: auto;
+}
+
+.choice{
+    width: 100%;
+    height: 60vh;
+}
+
+.choosen{
+    background-color: orange;
+}
+
+.main{
+    text-align: center;
+    position: relative;
+}
+
+.main .detail{
+    position: absolute;
+    top: 33vh;
+    bottom: 0;
+    width: 100%;
+    height: 60vh;
+    background: white;
+    box-shadow: 0 0 10px black;
+}
+
+
+.thumb {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px black;
+    align-items: center;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}
+
+.leaderboard{
+    margin: 25px auto;
+}
+
+.leaderboard table{
+    width: 100%;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+}
+
+
+@media screen and (min-width: 520px) {
+    body, .header, .game-inter, .levelaccess, .result{
+        width: 520px;
+        margin: 0 auto;
+    }
+}

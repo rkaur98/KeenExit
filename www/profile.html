@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
+        For details, see http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+    <!--   <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *"> -->
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="icomoon/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>KeenExit</title>
+</head>
+<body onload="profile()">
+
+    <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAetWXnOoa6Tbah5y9HMGDyMOyrD6OrHoA",
+            authDomain: "keenexit-b0c70.firebaseapp.com",
+            databaseURL: "https://keenexit-b0c70.firebaseio.com",
+            projectId: "keenexit-b0c70",
+            storageBucket: "",
+            messagingSenderId: "1037933812512"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+    <div class="game">
+        
+        <a href="home.html" class="icon-cross dbtn"></a>
+        
+        <div class="main">
+            <a href="profile-image.html" id="profile" class="profile"><img src="images/char1.png" /></a>
+
+            <div class="detail">
+                <p id="username"></p>
+                <div class="leaderboard">
+                    <p>Leading Players</p>
+                    <table>
+                        <tr id="l1">
+                            <td><p>Level1</p></td>
+                            <td id="user" class="user"></td>
+                            <td id="time"></td>
+                        </tr>
+                        <tr id="l2">
+                            <td><p>Level2</p></td>
+                            <td id="user" class="user"></td>
+                            <td id="time"></td>
+                        </tr>
+                        <tr id="l3">
+                            <td><p>Level3</p></td>
+                            <td id="user" class="user"></td>
+                            <td id="time"></td>
+                        </tr>
+                        <tr id="l4">
+                            <td><p>Level4</p></td>
+                            <td id="user" class="user"></td>
+                            <td id="time"></td>
+                        </tr>
+                    </table>
+                </div>
+                <a id="btnLogout" class="profile-a grnbtn" onClick="logout()">Logout</a>
+            </div>
+            
+        </div>
+
+
+
+
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+    <script type="text/javascript" src="scripts/index.js"></script>
+</body>
+</html>
+

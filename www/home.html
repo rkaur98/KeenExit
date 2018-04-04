@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+        -->
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <title>Home</title>
+</head>
+<body onload="home()">
+    <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAetWXnOoa6Tbah5y9HMGDyMOyrD6OrHoA",
+            authDomain: "keenexit-b0c70.firebaseapp.com",
+            databaseURL: "https://keenexit-b0c70.firebaseio.com",
+            projectId: "keenexit-b0c70",
+            storageBucket: "",
+            messagingSenderId: "1037933812512"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+    <div class="game">
+
+        <div class="game-inter home">
+            <div class="header">
+                <a href="profile.html" id="profile" class="profile"><img src="images/char1.png" /></a>
+                <div class="logo"><img src="images/KeenExitLogo.png" alt="logo" /></div>
+
+            </div>
+            
+            <div id="levels" class="levels">
+                <div class="leveldiv dleft">
+                    <div class="levelgame" id="1">1</div>
+                </div>
+                <div class="leveldiv dright">
+                    <div class="levelgame" id="2">2</div>
+                </div>
+                <div class="leveldiv dleft">
+                    <div class="levelgame" id="3">3</div>
+                </div>
+                <div class="leveldiv dright">
+                    <div class="levelgame" id="4">4</div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="levelaccess" class="levelaccess hide">
+            <div id="levelaccessdiv" class="levelaccessdiv">
+                <div class="levelinfo">
+                    <div id="levelpro"></div>
+                    <div id="levelname"></div>
+                </div>
+                <div class="players" id="players">
+                    <p>Top Players</p>
+                </div>
+                <div class="buttons" id="buttons">
+                    <a href="home.html" class="grnbtn">Cancel</a>
+                    
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+    <script type="text/javascript" src="scripts/index.js"></script>
+    <script type="text/javascript" src="scripts/home.js"></script>
+</body>
+</html>
